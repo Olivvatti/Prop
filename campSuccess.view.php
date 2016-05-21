@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <?php 
+            include('../includes/common.inc.php');   
+            displayHeadTag();
+            global $campInfo;
+        ?>
+        <title>Camp Registration</title>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h1>
+            <img src="../templates/images/logo.png" alt="logo" style="width:400px;height:70px" />
+        </h1>
+        <div class="container">
+            <?php
+            displayHeader();
+            ?>
+            <div class="content">
+                <div id="RSwapper">
+                    <header class="regHeader">Welcome <?php echo($_SESSION['name']);?> to our festival!</header>
+                    <div class = "paymentRequest">
+                        <div class="bg-warning">You have been registered successfully! 
+                            Your Camp Reservation Number is <?php echo $campInfo['CampRes_No'] ?>. 
+                            Confirmation email has been sent to  <?php echo ($_SESSION['userEmail']); ?>.                            
+                        </div>
+                        <form action="../controller/campRegSuccess.php" method="post"> 
+                            <input type="submit" name="BackPersonPage" value="Back To Personal Page"/>                            
+                        </form>
+                    </div>
+                </div><!--end div#RSwapper-->
+            </div><!--End div.content-->
+    </div>
+   <?php
+        displayFooter();
+    ?>
+    </body>
+</html>

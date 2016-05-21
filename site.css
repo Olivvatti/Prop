@@ -1,0 +1,601 @@
+html { 
+
+}
+h1.logo {
+    padding-top: 15px;
+}
+body {
+  color:#333;
+  text-align:center;
+  font-family: arial;
+  background: url(../images/1.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.content {
+    background: #FFFFFF;
+    width: 100%;
+    padding-bottom: 20px;
+    min-height: 570px;
+}
+
+.BG{
+    background: url(../images/background.jpg);
+    background-size: 100%;
+}
+
+#pargh{
+font-weight:normal;
+    color:#000000;
+    border: 1px dotted #FF2424;
+    letter-spacing:0pt;
+    word-spacing:2pt;
+    font-size:11px;
+    text-align:center;
+    font-family:arial, helvetica, sans-serif;
+    line-height:2;
+}
+.footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 10px;
+  background-color: #04133c;
+  text-align: center;
+}
+
+.footer img{
+    height: 50px;
+    float: right;
+    
+}
+
+.clear{
+    clear: both;
+}
+
+span#footer {
+color: #ffffff;
+float: right;
+margin-top: 8px;
+margin-right: 15px;
+font-size: 22px;
+}
+
+.nav {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.nav li {
+	float: left;
+	width: 16.66%;
+	position: relative;
+}
+
+.nav li a {
+	background: #333;
+	color: #fff;
+	display: block;
+	padding: 7px 8px;
+	text-decoration: none;
+	border-top: 1px solid #000;
+}
+
+.nav li a:hover {
+	color: #069;
+}
+
+/*=== submenu ===*/
+
+.nav ul {
+	display: none;
+	position: absolute;
+	margin-left: 0px;
+	list-style: none;
+	padding: 0px;
+}
+
+.nav ul li {
+	width: 190px;
+	float: left;
+}
+
+.nav ul a {
+	display: block;
+	height: 34px;
+	padding: 7px 8px;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #222;
+}
+
+.nav ul li a:hover {
+	color: #069;
+}
+
+.nav > li:hover ul {
+    display: block;
+}
+.clock-item{
+    width: 150px;
+    float:left;
+    margin: 15px;  
+}
+.clock{
+width: 720px;
+    margin: 0 auto;
+}
+.clock-item .inner {
+height: 0px;
+padding-bottom: 100%;
+position: relative;
+width: 100%;
+}
+.clock-canvas {
+background-color: rgba(61, 61, 61, .3);
+border-radius: 50%;
+height: 0px;
+padding-bottom: 100%;
+}
+.text {
+color: #fff;
+font-size: 30px;
+font-weight: bold;
+margin-top: -50px;
+position: absolute;
+top: 50%;
+text-align: center;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+width: 100%;
+}
+.text .val {
+font-size: 45px;
+}
+.text .type-time {
+font-size: 18px;
+    margin-top: -10px;
+}
+ @media (min-width: 768px) and (max-width: 991px) {
+.clock-item {
+margin-bottom: 30px;
+}
+}
+ @media (max-width: 767px) {
+.clock-item {
+margin: 0px 30px 30px 30px;
+}
+}
+
+#route {
+text-align: left;
+font-family:  Helvetica, sans-serif;
+font-weight: bold;
+color: #0481b1;
+padding: 24px 30px;
+font-size: 24px;
+text-transform: uppercase;
+border-bottom: 3px solid #0481b1;;
+width: 100%;
+display: block;   
+}
+
+#location{
+text-align: left;
+font-family:  Helvetica, sans-serif;
+text-transform: uppercase;
+font-size: 20px;
+padding-left: 85px;
+padding-top: 25px;
+}
+
+#location2{
+text-align: left;
+font-family:  calibri;
+padding-left: 85px;
+}
+
+#h2travel{
+text-align: left;
+font-family:  Helvetica, sans-serif;
+font-size:20px;
+padding-left: 85px;
+padding-top: 25px;
+}
+#travelby{
+text-align: left;
+font-family:  Helvetica, sans-serif;
+padding-left: 85px;
+}
+
+img map{
+   padding:1px;
+   border:1px solid #021a40;
+   background-color:#ff0;
+}
+
+
+/***************Registrationform***********************/
+#Regwrapper {
+    margin: 0px auto;
+    width:100%;
+    font-family:Verdana, sans-serif;
+}
+
+.regHeader {
+    color:#0481b1;
+    font-size:18px;
+    padding:5px 10px;
+    background:#fff;
+    padding:16px 20px;
+    text-transform:uppercase;
+    font-family:Helvetica, sans-serif;
+    text-align: left;
+    
+}
+.regHeader > span
+{
+    border-bottom: 3px solid #0481b1;
+    width: 100%;
+    display: block;
+}
+#Regwrapper > form > div {
+    background: #fff; 
+    background: -moz-linear-gradient(#fff, #f9fdff);
+    background: -o-linear-gradient(#fff, #f9fdff);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f9fdff)); 
+    background: -webkit-linear-gradient(#fff, #f9fdff);
+    padding:20px;
+    border-color:rgba(4, 129, 177, 0.4);
+    text-align: left;
+}
+#Regwrapper > form label
+{
+    width: 150px;
+}
+#Regwrapper input
+{
+    color: #373737;
+    background: #fff;
+    border: 1px solid #CCCCCC;
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.2em;
+    margin-bottom:15px;
+    //box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+#Regwrapper input[type="text"], #Regwrapper input[type="password"]
+{
+    padding: 8px 6px;
+    height: 44px;
+    width: 280px;
+}
+#Regwrapper input[type="text"]:focus , #Regwrapper input[type="password"]:focus 
+{
+    background:#f5fcfe;
+    text-indent: 0;
+    z-index: 1;
+    color: #373737;
+    /*-webkit-transition-duration: 400ms;
+    -webkit-transition-property: width, background;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-duration: 400ms;
+    -moz-transition-property: width, background;
+    -moz-transition-timing-function: ease;
+    -o-transition-duration: 400ms;
+    -o-transition-property: width, background;
+    -o-transition-timing-function: ease;
+    width: 380px;*/
+    border-color:#ccc;
+    //box-shadow:0 0 5px rgba(4, 129, 177, 0.5);
+    opacity:0.6;
+}
+#Regwrapper input[type="submit"]{
+    background: #222;
+    border: none;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+    text-transform:uppercase;
+    color: #eee;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 155px;
+    padding: 5px 22px;
+   
+}
+#Regwrapper input[type="submit"]:hover{
+    opacity: 0.7;
+    text-decoration: none;
+}
+/***/
+#RSwapper{
+    margin: 0px auto;
+    width:100%;
+    font-family:Verdana, sans-serif;
+    background: #fff; 
+}
+
+#RSwapper header{
+    padding-left: 50px;
+}
+#RSwapper > form > div {
+    background: -moz-linear-gradient(#fff, #f9fdff);
+    background: -o-linear-gradient(#fff, #f9fdff);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f9fdff)); 
+    background: -webkit-linear-gradient(#fff, #f9fdff);
+    padding:20px;
+    border-color:rgba(4, 129, 177, 0.4);
+    text-align: left;
+}
+#RSwapper > form > div > div
+{
+    line-height: 30px;
+}
+#RSwapper  form label
+{
+    width: 150px;
+}
+#RSwapper .RsubHeader {
+    color:#0481b1;
+    font-size:16px;
+    padding:0px 10px;
+    background:#fff;
+    font-family:Helvetica, sans-serif;
+    text-align: left;
+    width: 27%;
+    border-bottom: none;
+}
+#RSwapper fieldset {
+    background: #fff; 
+    padding:20px;
+    border: 2px solid #0481b1;
+    width: 50%;
+    text-align: left;
+    margin-left: 30px;
+}
+.white-tooltip + .tooltip > .tooltip-inner {
+    background-color: #FFFFFF;
+    color: black;
+}
+.tooltip.bottom .tooltip-arrow{
+    border-bottom-color: #FFFFFF!important;
+}
+.paymentRequest
+{
+    text-align: left;
+    padding: 10px 30px;
+    width: 90%;
+    
+}
+.paymentRequest > div
+{
+    color:#0481b1;
+    font-size:18px;
+    padding:5px 10px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#Regwrapper label.error{
+    color: #a94442;
+    display: inline;
+    width: auto;
+    font-size: 13px;
+    margin-left: 30px;
+}
+#Regwrapper input.error
+{
+   border-color:#a94442;
+}
+/***********LOGIN FORM***************/
+.loginMain
+{
+    position: absolute;
+    width: 500px;
+    left: 25%;
+    margin-top: 50px;
+    border: 2px solid #061b57;
+    
+}
+.login-form {
+    margin: 0% auto;
+    width: 100%;
+}
+.login-form {
+    background: white;
+}
+.login-form  h1 {
+    color:#0481b1;
+    font-size: 28px;
+    background:#fff;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    margin: 0px 5%;
+    text-transform:uppercase;
+    font-family:Helvetica, sans-serif;
+    border-bottom: 2px solid #0481b1;
+    text-align: left;
+}
+.login-form  form {
+    width: 80%;
+    margin: 0px auto;
+    padding: 11% 0px 9%;
+}
+.login-form input[type="submit"] {
+    width: 97%;
+    padding: 3%;
+    margin-bottom: 8%;
+    background: #0f4bea;
+    font-family: "Open Sans",sans-serif;
+    color: white;
+    font-size: 20px;
+    outline: medium none;
+    border: medium none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.5s ease 0s;
+}
+.login-form p {
+    text-align: center;
+}
+.login-form form p a {
+    color: rgba(15, 78, 241, 0.66);
+    font-family: "Open Sans",sans-serif;
+}
+.login-form input[type="text"], .login-form input[type="password"]{
+    text-align: left;
+    position: relative;
+    width: 97%;
+    padding: 5% 3%;
+    background: rgba(15, 75, 234, 0.11);
+    margin-bottom: 9%;
+    font-family: "Open Sans",sans-serif;
+    color: #7e7e7e;
+    font-weight: 600;
+    font-size: 16px;
+    outline: medium none;
+    border: 1px solid rgba(16, 81, 255, 0.11);
+    text-shadow: none;
+}
+/*************Camp Registration**********/
+#campForm{
+    height:400px;
+}
+
+#CampDate{
+    float: left;
+    position: relative;
+    left: 150px;
+}
+
+#innerContainer{
+    box-sizing:border-box;
+    height: 90%;
+}
+#leftCol{
+    float:left;
+    width: 45%;
+}
+#rightCol{
+    float:left;
+    width: 40%;
+}
+
+.camper{
+    width:35%;
+}
+
+#campButtons{
+    float: right;
+    padding-right: 35px;
+    margin: 10px;
+}
+
+/*************Contact_Us**********/
+#Cont{
+    margin: 0 auto;
+    padding: 2em 2em 4em;
+    max-width: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #061b57;
+    background-color: #ffffff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+}
+
+.table1 {
+    vertical-align: top;
+    float:left; 
+    width: 100%;
+    background-color: white;
+    font-size: 155%;
+}
+
+.table1 .linkart{
+vertical-align: top;
+text-align: left;
+    padding-left: 25px;
+}
+
+.table1 td:hover{
+    background-color: bisque;
+}
+
+/*The following is the CSS for the personalPages of the user.*/
+#mainInfoColumn{
+   overflow: auto;
+}
+
+#welcomeContainer{
+    max-width: 55%;
+    float: left;
+    position: relative;
+    padding: 4px;
+}
+#welcomeMsg{
+    font-family: Helvetica,sans-serif;
+    font-size: 25px;
+    padding: 2px;
+}
+#toDoList{
+    float: right;
+    padding: 12px;
+    margin-top: 128px;
+    margin-right: 20px;
+    width:35%;
+    border: solid;
+    top:21px;
+    right:14px;
+}
+.ticketReminder{
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+p.personalPage{
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 20px
+}
+
+.userInfo{
+    float: left;
+    padding: 12px;
+    position:relative;
+    width:600px;
+    height: 257px;
+    border: solid;
+    top:8px;
+    left:15px;
+    text-align: left;
+    margin: 5px;
+}
+#logout{
+    width: 150px;
+    margin-top: 20px;
+}
+#mainInfoColumn a:hover{
+     text-decoration: none !important;
+}
+
+.errorlist
+{
+    background-color: #f2dede;
+    list-style-type: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #a94442;
+}
+.errorlist > li{
+    padding-left: 200px;
+    text-align: left;
+}
